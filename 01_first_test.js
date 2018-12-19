@@ -31,9 +31,9 @@ describe(" Vanilla JavaScript Test cases", () => {
       const result = Addition(num1, num2);
       
       expect(result).toBe(30);
-      //
-      //
-      //
+      // expect(false).not.toBe(true);
+      // expect(result).toEqual(30);
+      // expect(result).toBeGreaterThan(10);
   })
   
   it("Subtraction test case", () => {
@@ -48,5 +48,20 @@ describe(" Vanilla JavaScript Test cases", () => {
       
       expect(result).toBe(true);
   })
+  
+  it("should work for objects", function() {
+      var foo = {
+        a: 12,
+        b: 34
+      };
+      var bar = {
+        a: 12,
+        b: 34
+      };
+      expect(foo).toEqual(bar);
+    });
+  
+  
+  
 
 })
